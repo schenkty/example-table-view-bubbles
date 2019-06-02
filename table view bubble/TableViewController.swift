@@ -19,6 +19,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
     }
+	
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
 
     // MARK: - Table view data source
 	func numberOfSections(in tableView: UITableView) -> Int {
